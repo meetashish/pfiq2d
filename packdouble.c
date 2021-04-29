@@ -2,7 +2,6 @@
 #include <stdint.h>
 #include <stdlib.h>
 
-
 /// @brief Generate Uniformly distributed random number with in [a,b]
 /// @param[in] a lower limit
 /// @param[in] b upper limit
@@ -24,7 +23,6 @@ double packiq(float i, float q);
 /// @param[out] pi pointer to inpahse sample
 /// @param[out] pi pointer to quadrature sample
 void unpackiq(double *piq, float *pi, float *pq);
-
 
 int main() {
     
@@ -49,7 +47,6 @@ int main() {
 
     return 0;
 }
-
 
 float UnifRand(float a, float b) {
     return a + rand() / (RAND_MAX / (b - a + 1) + 1);
